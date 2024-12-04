@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea{ 
+    font-family: var(--roboto);
+} 
+
+:root {
+    --roboto: "Roboto", sans-serif;
+    --blue: #0b3b58;
+    --green: #6ac0b4;
+    --gray: #f6f5f7;
+    --white: #fff;
+}
+
+body{
+    background-color: f7f7f7;
+    margin: 0;
+}
+
+header{
+    background-color: #fff;
+    height: 80px;
+}
+
+header #navbar{
+    display: flex;
+    background-color: var(--blue);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    border-radius: 0 0 30px 30px;
+}
+
+header #navbar .nav-brand {
+    height: 60px;
+}
+
+header #navbar .nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4rem;
+}
+
+header #navbar .nav-list .nav-item a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 24px; 
+}
+
+header #navbar .nav-list .nav-item a:hover{
+    color: var(--green);
+    transition: 0.3s;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+/* section banner */
+main{
+    margin-top: 6rem;
+}
+
+main #banner{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+main #banner .banner-content .banner-content-title{
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: var(--blue);
+   
+}
+main #banner .banner-content .banner-content-subtitle{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+main #banner .imagens{
+    border-radius: 10px;    
+}
+
+main #banner .legenda{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 3rem 0;
+}
+
+/* Espaço da missão */
+
+.missao{
+    padding: 4rem 0rem ;
+    background-color: var(--blue);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.missao__logo{
+    width: 326px;
+    margin: 10px;
+}
+
+.missao__conteiner{
+    display: flex;
+    text-align: start;
+    gap: 20rem;
+    /* justify-content: space-between; */
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.missao__icone{
+    width: 150px;
+    height: auto;
+}
+
+.missao__titulo{
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.missao__subtitulo{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+/* Espaço da visão */
+
+.visao{
+    padding: 4rem 0rem ;
+    background-color: var(--gray);
+    color: var(--blue);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.visao__conteiner{
+    display: flex;
+    text-align: start;
+    gap: 20rem;
+    /* justify-content: space-between; */
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.visao__icone{
+    width: 200px;
+    height: auto;
+}
+
+.visao__titulo{
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.visao__subtitulo{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+/* Espaço de valores */
+
+.valores{
+    padding: 4rem 0rem ;
+    background-color: var(--green);
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14rem;
+}
+
+.valores__conteiner{
+    display: flex;
+    text-align: start;
+    gap: 20rem;
+    /* justify-content: space-between; */
+    margin-top: 4rem;
+    align-items: center;
+}
+
+
+.valores__titulo{
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.lista__valores{
+    font-weight: 500;
+    font-size: 40px;
+    list-style: none;
+
+}
+
+.subtitulo__lista{
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.valores__icone{
+    width: 200px;
+    height: auto;
+}
