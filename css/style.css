@@ -239,3 +239,176 @@ main #banner .legenda{
     width: 200px;
     height: auto;
 }
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    font-size: large;
+}
+
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    header #navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav-list {
+        gap: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main #banner {
+        padding: 0 4rem;
+    }
+
+    .missao__conteiner,
+    .visao__conteiner,
+    .valores__conteiner {
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
+
+    .missao__titulo,
+    .visao__titulo,
+    .valores__titulo {
+        font-size: 40px;
+    }
+
+    .missao__subtitulo,
+    .visao__subtitulo,
+    .lista__valores {
+        font-size: 24px;
+    }
+
+    .valores {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main #banner {
+        padding: 0 2rem;
+    }
+
+    .missao__icone,
+    .visao__icone,
+    .valores__icone {
+        width: 100px;
+    }
+
+    .missao__titulo,
+    .visao__titulo,
+    .valores__titulo {
+        font-size: 32px;
+    }
+
+    .missao__subtitulo,
+    .visao__subtitulo,
+    .lista__valores {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header #navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    header #navbar .nav-list {
+        gap: 1rem;
+    }
+
+    main #banner {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .banner-content-title {
+        font-size: 32px;
+    }
+
+    .banner-content-subtitle {
+        font-size: 14px;
+    }
+
+    .missao__titulo,
+    .visao__titulo,
+    .valores__titulo {
+        font-size: 28px;
+    }
+
+    .missao__subtitulo,
+    .visao__subtitulo,
+    .lista__valores {
+        font-size: 18px;
+    }
+
+    .valores {
+        gap: 3rem;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

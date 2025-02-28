@@ -108,7 +108,7 @@
 
     
 
-    <form id="form-contato">
+    <!-- <form id="form-contato">
         <h2>Faça aqui a sua denuncia</h2>
         <p>Todos os usuários do canal, sejam colaboradores, terceiros, qualquer parte interessada ou stakeholders em geral não serão identificados em nenhuma hipótese, se assim o desejarem, o anonimato e o sigilo estarão sempre garantidos, confirmando-se ou não as denúncias apontadas.</p>
 
@@ -168,7 +168,79 @@
             <input type="text" id="" name="none">
 
 
+        </div> -->
+
+
+
+
+        <!-- ////////////////////////////////////////// -->
+        <div class="form-container">
+            <h2>Formulário de Denúncia</h2>
+            <form onsubmit="enviarFormulario(event)">
+                <label>Deseja se identificar? *</label><br>
+                <input type="radio" name="identificar" id="idSim" value="sim" onclick="toggleIdentification()"> Sim
+                <input type="radio" name="identificar" id="idNao" value="não" onclick="toggleIdentification()"> Não
+                
+                <div id="identification" class="hidden">
+                    <label>Nome:</label>
+                    <input type="text" name="nome">
+                    <label>CPF:</label>
+                    <input type="text" name="cpf">
+                    <label>Telefone:</label>
+                    <input type="text" name="telefone">
+                    <label>Relação com a organização:</label>
+                    <input type="text" name="relacao">
+                </div>
+    
+                <label>Sobre o que é a denúncia? *</label>
+                <select name="denuncia">
+                    <option>Descumprimento de política/norma/procedimento interno(s)</option>
+                    <option>Desvio de conduta/comportamento</option>
+                    <option>Assédio ou discriminação</option>
+                    <option>Corrupção ou fraude</option>
+                    <option>Violação à privacidade de dados pessoais</option>
+                    <option>Conflito de interesses</option>
+                    <option>Roubos ou furtos</option>
+                    <option>Outros</option>
+                </select>
+                
+                <label>Pessoa envolvida *</label>
+                <select name="pessoa_envolvida">
+                    <option>Coordenador Executivo (dirigente)</option>
+                    <option>Colaborador</option>
+                    <option>Prestador de serviço</option>
+                    <option>Fornecedor</option>
+                    <option>Parceiro comercial</option>
+                    <option>Outro</option>
+                </select>
+                
+                <label>Data da ocorrência *</label>
+                <input type="date" name="data_ocorrencia">
+                
+                <label>Local da ocorrência *</label>
+                <input type="text" name="local_ocorrencia">
+                
+                <label>Descreva a ocorrência *</label>
+                <textarea name="descricao" rows="5"></textarea>
+                
+                <label>Sobre o fato que você está denunciando, você tem...? *</label><br>
+                <input type="radio" name="certeza" value="certeza"> Certeza
+                <input type="radio" name="certeza" value="suspeita"> Suspeita
+                
+                <label>Coordenadores e a alta direção da organização têm conhecimento do incidente? *</label><br>
+                <input type="radio" name="direcao_conhecimento" value="sim"> Sim
+                <input type="radio" name="direcao_conhecimento" value="nao"> Não
+                
+                <label>Você já contou a alguém sobre o incidente? *</label><br>
+                <input type="radio" name="contou" value="sim"> Sim
+                <input type="radio" name="contou" value="nao"> Não
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
+        <!-- //////////////////////////////////////////////// -->
+
+
 
     
     <footer>
